@@ -1,1 +1,1 @@
-sudo apt install golang-go
+sudo apt install golang-go make vim tmux -y
