@@ -2,7 +2,7 @@
 sudo apt install golang-go vim tmux -y
 
 # libbpf and libbpf-go dependencies
-sudo apt install clang make libelf-dev linux-tools-5.15.0-56-generic -y
+sudo apt install clang make libelf-dev libbpf-dev linux-tools-5.15.0-56-generic -y
 
 git submodule init
 git submodule update
