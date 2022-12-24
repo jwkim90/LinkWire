@@ -1,5 +1,5 @@
 # basics
-sudo apt install golang-go vim tmux -y
+sudo apt install golang-go vim tmux vagrant virtualbox -y
 
 # libbpf and libbpf-go dependencies
 sudo apt install clang make libelf-dev libbpf-dev linux-tools-5.15.0-56-generic -y
