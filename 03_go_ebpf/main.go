@@ -1,7 +1,16 @@
 package main
-import bpf "github.com/aquasecurity/libbpfgo"
+import (
+        "fmt"
+        "os"
+        bpf "github.com/aquasecurity/libbpfgo"
+)
 
 func main() {
 
-        //bpfModule := bpf.NewModuleFromFile()
+        bpfModule, err := bpf.NewModuleFromFile("main.bpf.o")
+        if err != nil {
+                fmt.Fprintln(os.Stderr, err)
+                os.Exit(-1)
+        }
+        defer bpfModule.Close()
 }
